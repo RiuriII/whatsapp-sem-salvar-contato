@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie mensagens sem salvar o contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="text-wrapper">
+        <h1><ion-icon name="logo-whatsapp"></ion-icon> Envie suas mensagens sem salvar o contato</h1>
+        <p>
+            Preencha os dados com atenção e após clique em enviar, você será direcionado para o Whatsapp.
+        </p>
+    </div>
+    <form action="#">
+        <fieldset>
+            <label for="phone-number">Número:</label>
+            <input type="tel" id="phone-number" minlength="14" maxlength="15" autocomplete="off" placeholder="(XX)XXXX-XXXXX" inputmode="numeric">
+        </fieldset>
+        <fieldset>
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="Olá, &#128075;" spellcheck="true"></textarea>
+        </fieldset>
+        <a href="#" class="form-btn">
+            Enviar
+            <ion-icon name="send-sharp"></ion-icon>
+        </a>
+    </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

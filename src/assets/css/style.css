@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font: var(--default-font);
+}
+
+:root {
+    --title-font: 600 2rem 'Poppins', sans-serif;
+    --default-font: 400 1rem 'Poppins', sans-serif;
+    --green:  #34af23;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: #f5f5f5;
+}
+
+.text-wrapper {
+    padding: 2rem .5rem;
+}
+
+.text-wrapper h1 {
+    font: var(--title-font);
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
+.text-wrapper  ion-icon {
+    font-size: 2rem;
+    color: var(--green);
+    position: relative;
+    top: 4px;
+}
+
+.text-wrapper p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+    background: #f5f5f5;
+    box-shadow: 10px 10px 20px #d0d0d0;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: .8rem;
+}
+
+fieldset label {
+    margin-right: auto;
+}
+
+fieldset  textarea {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #4b4b4b;
+    border-radius: 10px;
+    resize: vertical;
+    padding: .5rem .5rem;
+}
+
+fieldset input[type="tel"] {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #4b4b4b;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    padding: .5rem;
+}
+
+.form-btn{
+    width: 150px;
+    padding: .8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    border-radius: 10px;
+    background: var(--green);
+    font: var(--title-font);
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 1rem;
+    transition: .3s ease;
+}
+
+.form-btn ion-icon{
+    font-size: 1.5rem;
+}
+
+.form-btn:hover {
+    letter-spacing: 2px;
+    background: #3fc92d;
+}
+
+@media (max-width: 700px) {
+    form {
+        max-width: 350px;
+    }
+    fieldset {
+        flex-direction: column;
+    }
+
+}
