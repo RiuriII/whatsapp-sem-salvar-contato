@@ -53,4 +53,4 @@ function sendMessage(formattedNumber) {
 }
 
 sendButton.addEventListener('click', validateNumber)
-inputNumber.addEventListener('keydown', maskNumber)
+inputNumber.addEventListener('keypress', maskNumber)
